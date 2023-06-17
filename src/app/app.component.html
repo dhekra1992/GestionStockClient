@@ -1,2 +1,16 @@
-<h2>je suis le component général</h2>
-<app-produit></app-produit>
+
+<div class="row">
+    <div class="col-lg-2" *ngIf="ShowHideSideBar">
+        
+        
+        
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-lg-10">
+        <a href data-toggle="collapse" (click)="ShowHideSideBar=!ShowHideSideBar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+        <app-navbar></app-navbar>
+
+        <app-content></app-content>
+    </div>
+</div>
