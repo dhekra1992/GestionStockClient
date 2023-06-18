@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app.routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     BrowserModule, 
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [ProduitMockService],
   bootstrap: [AppComponent]
